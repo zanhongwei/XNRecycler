@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">小牛</string>
+
+    <string name="read_data">010305F2000D2530</string>
+    <string name="metal_open">01050CC9FF005F54</string>
+    <string name="metal_close">01050CCAFF00AF54</string>
+    <string name="plastics_open">01050CCBFF00FE94</string>
+    <string name="plastics_close">01050CCCFF004F55</string>
+    <string name="textile_open">01050CCDFF001E95</string>
+    <string name="textile_close">01050CCEFF00EE95</string>
+    <string name="paper_open">01050CCFFF00BF55</string>
+    <string name="paper_close">01050CD0FF008E93</string>
+    <string name="glass_open">01050CD1FF00DF53</string>
+    <string name="glass_close">01050CD2FF002F53</string>
+    <string name="waste_open">01050CD3FF007E93</string>
+    <string name="waste_close">01050CD4FF00CF52</string>
+    <string name="bottle_open">01050CD5FF009E92</string>
+    <string name="bottle_close">01050CD6FF006E92</string>
+    <string name="bottle_go">01050CD7FF003F52</string>
+    <string name="bottle_back">01050CD8FF000F51</string>
+
+    <string name="re_metal_open">01050CD9FF005E91</string>
+    <string name="re_plastics_open">01050CDAFF00AE91</string>
+    <string name="re_textile_open">01050CDBFF00FF51</string>
+    <string name="re_paper_open">01050CDDFF001F50</string>
+    <string name="re_glass_open">01050CDEFF00EF50</string>
+    <string name="re_waste_open">01050CDFFF00BE90</string>
+    <string name="re_bottle_open">01050CDCFF004E90</string>
+
+
+</resources>

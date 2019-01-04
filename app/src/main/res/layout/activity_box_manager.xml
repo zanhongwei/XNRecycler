@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activitys.BoxManagerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/xn_title_bar_s" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:src="@drawable/text" />
+
+            <LinearLayout
+                android:layout_width="190px"
+                android:layout_height="80px"
+                android:layout_below="@+id/text"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_ll_time"
+                android:gravity="center"
+                android:layout_marginTop="20px"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:src="@drawable/daojishi" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="234秒"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_center"
+                android:layout_width="420px"
+                android:layout_height="420px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/zhongjian" />
+
+            <LinearLayout
+                android:id="@+id/ll_paper"
+                android:layout_width="229px"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_center"
+                android:layout_alignLeft="@+id/iv_center"
+                android:layout_marginBottom="50px"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_paper_name"
+                    style="@style/boxac_text_style"
+                    android:text="纸类" />
+
+                <TextView
+                    android:id="@+id/tv_paper_price"
+                    style="@style/boxac_text_style_small"
+                    android:text="0.90元/公斤" />
+
+                <ImageView
+                    android:layout_width="265px"
+                    android:layout_height="156px"
+                    android:layout_marginTop="10px"
+                    android:src="@drawable/zhilei" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottle"
+                android:layout_width="229px"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_center"
+                android:layout_marginLeft="-80px"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@+id/iv_center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_bottle_name"
+                    style="@style/boxac_text_style"
+                    android:text="饮料瓶" />
+
+                <TextView
+                    android:id="@+id/tv_bottle_price"
+                    style="@style/boxac_text_style_small"
+                    android:text="0.1元/个" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="156px"
+                    android:layout_marginTop="15px"
+                    android:src="@drawable/yinliaoping" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_plastics"
+                android:layout_width="229px"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_center"
+                android:layout_marginLeft="64px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@+id/iv_center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_plastics_name"
+                    style="@style/boxac_text_style"
+                    android:text="塑料" />
+
+                <TextView
+                    android:id="@+id/tv_plastics_price"
+                    style="@style/boxac_text_style_small"
+                    android:text="0.60元/公斤" />
+
+                <ImageView
+                    android:layout_width="229px"
+                    android:layout_height="156px"
+                    android:layout_marginTop="20px"
+                    android:src="@drawable/suliao" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_glass"
+                android:layout_width="229px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_center"
+                android:layout_marginLeft="-52px"
+                android:layout_marginTop="-30px"
+                android:layout_toRightOf="@+id/iv_center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="156px"
+                    android:src="@drawable/boli" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_glass"
+                        style="@style/boxac_text_style"
+                        android:text="玻璃" />
+
+                    <ImageView
+                        android:layout_width="36px"
+                        android:layout_height="21px"
+                        android:layout_marginLeft="5px"
+                        android:src="@drawable/lvye" />
+                </LinearLayout>
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_bottle_name"-->
+                <!--style="@style/boxac_text_style"-->
+                <!--android:layout_marginTop="20px"-->
+                <!--android:text="玻璃" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_bottle_price"-->
+                <!--style="@style/boxac_text_style_small"-->
+                <!--android:text="0.05元/公斤" />-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_metal"
+                android:layout_width="229px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_center"
+                android:layout_alignLeft="@+id/iv_center"
+                android:layout_marginLeft="24px"
+                android:layout_marginTop="50px"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="156px"
+                    android:src="@drawable/jinshu" />
+
+                <TextView
+                    android:id="@+id/tv_metal_name"
+                    style="@style/boxac_text_style"
+                    android:layout_marginTop="20px"
+                    android:text="金属" />
+
+                <TextView
+                    android:id="@+id/tv_metal_price"
+                    style="@style/boxac_text_style_small"
+                    android:text="0.90元/公斤" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_harmful_waste"
+                android:layout_width="229px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_center"
+                android:layout_marginTop="-150px"
+                android:layout_marginRight="20px"
+                android:layout_toLeftOf="@id/iv_center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="229px"
+                    android:layout_height="156px"
+                    android:src="@drawable/youhailaji" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_harmful_waste"
+                        style="@style/boxac_text_style"
+                        android:text="有害垃圾" />
+
+                    <ImageView
+                        android:layout_width="36px"
+                        android:layout_height="21px"
+                        android:layout_marginLeft="5px"
+                        android:src="@drawable/lvye" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_textile"
+                android:layout_width="229px"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_center"
+                android:layout_marginRight="40px"
+                android:layout_marginBottom="-150px"
+                android:layout_toLeftOf="@+id/iv_center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_textile_name"
+                    style="@style/boxac_text_style"
+                    android:text="纺织物" />
+
+
+                <TextView
+                    android:id="@+id/tv_textile_price"
+                    style="@style/boxac_text_style_small"
+                    android:text="0.90元/公斤" />
+
+                <ImageView
+                    android:layout_width="229px"
+                    android:layout_height="156px"
+                    android:layout_marginTop="20px"
+                    android:src="@drawable/fangzhiwu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginBottom="10px"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:src="@drawable/jibian" />
+
+                <TextView
+                    android:id="@+id/tv_company_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:text="机器编号：022626"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center_vertical"
+            android:paddingLeft="50px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="带有“ "
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="21px"
+                android:src="@drawable/lvye" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ”的为公益会有品类，投递不计入环保金哦！"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_recycle"
+                android:layout_width="206px"
+                android:layout_height="match_parent"
+                android:background="@drawable/bj_wshsy"
+                android:gravity="center"
+                android:text="我是回收员"
+                android:textColor="@color/a32"
+                android:textSize="30px"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_box_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/convenient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/lvseshenghuo" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activitys.ScanSuccessActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/sm_beijing">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/xn_title_bar_s" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_top"
+            android:layout_marginTop="110px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!--  扫码成功的布局  start-->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="箱门已打开，请正确投递"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_flow"
+                android:layout_width="848px"
+                android:layout_height="660px"
+                android:layout_marginTop="50px"
+                android:src="@drawable/liucheng"
+                android:visibility="visible"/>
+
+            <!--  扫码成功的布局  end-->
+
+
+            <!--  投递的布局  start-->
+
+            <ImageView
+                android:id="@+id/iv_success"
+                android:layout_width="416px"
+                android:layout_height="395px"
+                android:src="@drawable/duigou"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="53px"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已投递"
+                    android:textColor="@color/white"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginRight="5px"
+                    android:text="5"
+                    android:textColor="@color/af6ff00"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个"
+                    android:textColor="@color/white"
+                    android:textSize="34px" />
+
+
+            </LinearLayout>
+
+
+            <!--  投递的布局  end-->
+
+
+            <!--  投递成功的布局  start-->
+            <LinearLayout
+                android:id="@+id/ll_content_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="53px"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已投递"
+                    android:textColor="@color/white"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:id="@+id/tv_content_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginRight="5px"
+                    android:text="0.0"
+                    android:textColor="@color/af6ff00"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公斤"
+                    android:textColor="@color/white"
+                    android:textSize="34px" />
+
+                <View
+                    android:layout_width="78px"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="环保金"
+                    android:textColor="@color/white"
+                    android:textSize="34px" />
+
+                <TextView
+                    android:id="@+id/tv_content_s_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginRight="5px"
+                    android:text="0.00"
+                    android:textColor="@color/af6ff00"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/white"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+            <!--  投递成功的布局  end-->
+
+
+            <Button
+                android:id="@+id/btn_go_on"
+                android:layout_width="470px"
+                android:layout_height="80px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="84px"
+                android:background="@drawable/bg_btn_ok"
+                android:text="继续投递"
+                android:textColor="@color/white"
+                android:textSize="30px"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_finish"
+                android:layout_width="470px"
+                android:layout_height="80px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="84px"
+                android:background="@drawable/bg_btn_ok"
+                android:text="结束投递"
+                android:textColor="@color/white"
+                android:textSize="30px"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_complete"
+                android:layout_width="470px"
+                android:layout_height="80px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="84px"
+                android:background="@drawable/bg_btn_ok"
+                android:text="投递完成"
+                android:textColor="@color/white"
+                android:textSize="30px" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="190px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_top"
+            android:layout_marginTop="62px"
+            android:background="@drawable/bg_ll_time"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/daojishi" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="234秒"
+                android:textColor="@color/white"
+                android:textSize="28px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/tp_chenggong" />
+
+</LinearLayout>

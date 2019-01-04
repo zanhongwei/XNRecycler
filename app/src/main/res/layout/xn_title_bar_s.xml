@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="248px">
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:src="@drawable/xiaoniu"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/iv_right"
+        android:layout_toRightOf="@+id/iv_left"
+        android:layout_marginLeft="35px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/bt_dianhua"/>
+
+            <TextView
+                android:id="@+id/tv_tb_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服电话：400-655-5757"
+                android:textSize="30px"
+                android:layout_marginLeft="15px"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15px">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/jibian" />
+
+            <TextView
+                android:id="@+id/tv_company_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="机器编号：02200001"
+                android:textColor="@color/white"
+                android:textSize="30px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="260px"
+        android:layout_height="140px"
+        android:src="@drawable/woshihuishouyuan"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60px"/>
+
+</RelativeLayout>

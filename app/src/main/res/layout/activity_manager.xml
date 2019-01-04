@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activitys.ManagerActivity"
+    android:background="@color/white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="248px"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:src="@drawable/xiaoniu"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_right"
+            android:layout_toRightOf="@+id/iv_left"
+            android:layout_marginLeft="35px"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:src="@drawable/bt_dianhua"/>
+
+                <TextView
+                    android:id="@+id/tv_tb_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客服电话：400-655-5757"
+                    android:textSize="30px"
+                    android:layout_marginLeft="15px"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15px">
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:src="@drawable/jibian" />
+
+                <TextView
+                    android:id="@+id/tv_company_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:text="机器编号：001"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="260px"
+            android:layout_height="140px"
+            android:src="@drawable/fanhuishouye"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"/>
+
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"
+        android:layout_marginTop="150px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金属回收箱"
+            android:textSize="50px"
+            android:textColor="@color/a32"
+            android:layout_marginLeft="100px"/>
+        
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+        
+        <Button
+            android:id="@+id/btn_open_metal"
+            android:layout_width="280px"
+            android:layout_height="90px"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="100px"
+            android:text="开箱"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="塑料回收箱"
+            android:textSize="50px"
+            android:textColor="@color/a32"
+            android:layout_marginLeft="100px"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_open_plastics"
+            android:layout_width="280px"
+            android:layout_height="90px"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="100px"
+            android:text="开箱"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纺织物回收箱"
+            android:textSize="50px"
+            android:textColor="@color/a32"
+            android:layout_marginLeft="100px"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_open_textile"
+            android:layout_width="280px"
+            android:layout_height="90px"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="100px"
+            android:text="开箱"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="饮料瓶回收箱"
+            android:textSize="50px"
+            android:textColor="@color/a32"
+            android:layout_marginLeft="100px"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_open_bottle"
+            android:layout_width="280px"
+            android:layout_height="90px"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="100px"
+            android:text="开箱"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纸张回收箱"
+            android:textSize="50px"
+            android:textColor="@color/a32"
+            android:layout_marginLeft="100px"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_open_paper"
+            android:layout_width="280px"
+            android:layout_height="90px"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="100px"
+            android:text="开箱"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="垃圾回收箱"
+            android:textSize="50px"
+            android:textColor="@color/a32"
+            android:layout_marginLeft="100px"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_open_waste"
+            android:layout_width="280px"
+            android:layout_height="90px"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="100px"
+            android:text="开箱"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玻璃回收箱"
+            android:textSize="50px"
+            android:textColor="@color/a32"
+            android:layout_marginLeft="100px"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_open_glass"
+            android:layout_width="280px"
+            android:layout_height="90px"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="100px"
+            android:text="开箱"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LogCat"
+            android:textSize="50px"
+            android:textColor="@color/a32"
+            android:layout_marginLeft="100px"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="280px"
+            android:layout_height="90px"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="100px"
+            android:text="查看"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="强制退出应用"
+            android:textSize="50px"
+            android:textColor="@color/a32"
+            android:layout_marginLeft="100px"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_out"
+            android:layout_width="280px"
+            android:layout_height="90px"
+            android:background="@drawable/bg_btn"
+            android:layout_marginRight="100px"
+            android:text="退出"
+            android:textColor="@color/white"
+            android:textSize="50px"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/aefefef"/>
+</LinearLayout>

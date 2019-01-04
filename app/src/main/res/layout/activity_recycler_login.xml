@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activitys.RecyclerLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/sm_beijing"
+        android:orientation="vertical">
+
+        <include layout="@layout/xn_title_bar_s" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@color/bg_bceada" />
+
+        <!-- 账号输入 暂时注释-->
+        <LinearLayout
+            android:layout_width="812px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="300px"
+            android:background="@drawable/bg_ll_login"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="44px"
+                android:text="账号"
+                android:textColor="@color/a32"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入账号"
+                android:textColor="@color/a32"
+                android:textColorHint="@color/c8c8c8"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <!-- 密码输入  暂时注释-->
+        <LinearLayout
+            android:layout_width="812px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60px"
+            android:background="@drawable/bg_ll_login"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="44px"
+                android:text="密码"
+                android:textColor="@color/a32"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="80px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入密码"
+                android:textColor="@color/a32"
+                android:textColorHint="@color/c8c8c8"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <!-- 登录按钮 -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="821px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100px"
+            android:background="@drawable/bg_btn_login"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="40px"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="190px"
+            android:layout_height="80px"
+            android:layout_below="@+id/ll_top"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="62px"
+            android:background="@drawable/bg_ll_time"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/daojishi" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="234秒"
+                android:textColor="@color/white"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_login_code"
+            android:layout_width="465px"
+            android:layout_height="465px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250px" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="602px"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tupianfour" />
+
+
+</LinearLayout>

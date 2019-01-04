@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.dfxh.wang.serialport_test"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 25
+        versionName "3.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'axehome'
+            keyPassword 'axehome20150908'
+            storeFile file('D:/axehome20150908.jks')
+            storePassword 'axehome20150908'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            debuggable true
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+
+        sourceSets {
+            main { jni.srcDirs = [] }
+        }
+    }
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    // 自定义打包的应用名称
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.contains('release')) {
+                    def fileName = "XNRecycle_v${variant.versionName}_${releaseTime()}.apk"
+                    outputFileName = fileName
+                } else if (outputFile != null && outputFile.name.contains('debug')) {
+                    def fileName = "XNRecycle_v${variant.versionName}_${releaseTime()}.apk"
+                    outputFileName = fileName;
+                }
+        }
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd")
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    /*testImplementation 'junit:junit:4.12'*/
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.zhy:autolayout:1.4.5'
+    //圆形头像
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //网络请求
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.google.code.gson:gson:2.8.1'
+
+    //轮播
+    compile 'com.bigkoo:ConvenientBanner:2.1.4'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //生成二维码
+    implementation files('libs/core.jar')
+    implementation files('libs/zxingjar-1.1.jar')
+
+    //加载等待动画
+    compile 'com.github.gittjy:LoadingDialog:1.0.2'
+}

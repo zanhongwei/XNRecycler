@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activitys.ScanCodeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sm_beijing"
+            android:orientation="vertical">
+
+            <include layout="@layout/xn_title_bar_s" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@color/white" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100px"
+                android:src="@drawable/saomiaowenzi" />
+
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="465px"
+                android:layout_height="465px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80px" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="465px"
+                android:layout_height="80px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60px"
+                android:background="@drawable/bg_tv_qvxiao"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#333333"
+                android:textSize="34px" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="170px"
+            android:layout_height="246px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginRight="40px"
+            android:src="@drawable/wenxinxiaochengxunma" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35px"
+            android:gravity="center_vertical"
+            android:paddingLeft="44px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="带有“"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="21px"
+                android:src="@drawable/lvye" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="”的为公益会有品类，投递不计入环保金哦！"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="603px"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/tupianfour" />
+    </LinearLayout>
+
+</LinearLayout>
